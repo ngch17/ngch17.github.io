@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Walkthrough</title>
+
+    <!-- default bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- try themes from: https://startbootstrap.com/-->
+     <link rel="stylesheet" type="text/css" href="theme.css"> 
+    <!-- <link rel="stylesheet" type="text/css" href="theme2.css"> -->
+    <!--<link rel="stylesheet" type="text/css" href="theme3.css"> -->
+    <!--<link rel="stylesheet" type="text/css" href="theme4.css">-->
+
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- animate.css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
+
+    <link rel="stylesheet" href="custom.css">
+
+
+    <!-- use this style for testing and development purposes -->
+    <!--<style type="text/css">
+        .container {
+            border: 2px dotted green;
+        }
+
+        .row {
+            border: 5px dotted red;
+        }
+
+        .row [class*=' col-'] {
+            border: 5px dotted purple;
+        }
+    </style>-->
+
+</head>
+
+<body>
+    <!-- to disable sticking bar to screen, remove class: navbar-fixed-top -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- hamburger button. do not touch! -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- HOME BUTTON: REPLACE href="#" with your landing page url -->
+                <a class="navbar-brand" href="#">
+                    <!-- PUT BRAND LOGO / ICON HERE (instead of font-awesome -->
+                    <i class="fa fa-telegram"></i>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!-- THIS UL HANDLES OUR LINKS -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="http://facebook.com">facebook</a></li>
+                    <li><a href="http://facebook.com">facebook2</a></li>
+                    <!-- to make more links, make some <li> in here -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--main container for entire page-->
+    <div class="container">
+
+        <!--row1: jumbotron-->
+        <div class="row">
+
+            <!--full width col for all devices-->
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+                <div class="jumbotron my-jumbotron-background">
+                    <h1 style="color:white;">No Limit</h1>
+                    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti aspernatur inventore facere non. Id-->
+                        <!--repellat, iste et quam pariatur quos praesentium cupiditate, ipsam provident eligendi sapiente veritatis
+                        voluptatibus placeat corporis.</p>-->
+                    <p><a class="btn btn-primary btn-lg" href="#" role="button">Join The Race</a></p>
+                </div>
+
+            </div>
+            <!--end of col1-->
+
+        </div>
+        <!--end of row1-->
+
+        <!--row2: thumbnail-->
+        <div class="row">
+
+            <div class="col-xs-12
+                        col-sm-4
+                        col-md-4
+                        col-lg-4">
+
+                <div class="thumbnail">
+                    <img src="https://www.nissanusa.com/dam/nissan/vehicles/sportscars/gt-r/2017/overview/key-features/2017-nissan-gtr-red-large.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Nissan</h3>
+                        <p>GTR 2017</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default"
+                                role="button">Button</a></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-xs-12
+                        col-sm-4
+                        col-md-4
+                        col-lg-4">
+
+                <div class="thumbnail">
+                    <img src="https://www.nissanusa.com/dam/nissan/vehicles/sportscars/gt-r/2017/colors-photos/exterior/2017-nissan-gtr-silver-original.jpg"
+                        alt="...">
+                    <div class="caption">
+                        <h3>Nissan</h3>
+                        <p>GTR 2017</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default"
+                                role="button">Button</a></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-xs-12
+                        col-sm-4
+                        col-md-4
+                        col-lg-4">
+
+                test3
+
+            </div>
+
+
+        </div>
+        <!--end of row2-->
+  
+    <!--row3:video-->
+    <div class="row">
+        <div class="col-xs-12">
+        
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cDpV8mUTRUs"></iframe>
+        </div>
+
+        </div>
+
+    </div>
+    <!--end of row3-->
+
+    <!--row4: form and generic text-->
+    <div class="row">
+
+        <div class="col-xs-12
+                    col-sm-6
+                    col-md-6
+                    col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <form action="https:coderinyou-1332.appspot.com/submit/" method="POST">
+                            
+                            <legend>
+                            Form Title 
+                            </legend>
+
+                            <div class="form-group">
+                                <label for="username">Name</label>
+                                <input id="username" class="form-control" type="text" name="Username" placeholder="Your Name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input id="email" class="form-control" type="email" name="Useremail" placeholder="abc@email.com" required>
+                            </div>
+
+                            <div>
+                                <label>
+                                    <input type="radio"
+                                           name="gender"
+                                           value="male"> male
+                                </label>
+                            </div>
+
+                            <div>
+                                <label>
+                                    <input type="radio"
+                                           name="gender"
+                                           value="female"> female
+                                </label>
+                            </div>
+
+                            <div>
+                                <input type="submit" class="btn btn-primary">
+                            </div>
+
+                        </form>
+                    
+                    </div>
+
+                </div>
+        </div>
+
+        <div class="col-xs-12
+                    col-sm-6
+                    col-md-6
+                    col-lg-6">
+                
+                <h1 class="text-primary text-center">Header</h1>
+                
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, fugit rerum. A dolorum quibusdam dolores ea ducimus officia eaque labore, quam debitis enim esse odio quo nostrum itaque ipsa, sunt!
+                </p>
+        </div>
+    </div>
+
+    <!--row5:contact information-->
+
+    <div class="row">
+        <!--col1:table-->
+        <div class="col-xs-12
+                    col-sm-4
+                    col-md-4
+                    col-lg-4">
+            
+            <h3 class="text-center">Price</h3>
+
+            <table class="table table-hover">
+                <tr class="success">
+                    <th>Model</th>
+                    <th>Year</th>
+                </tr>
+                <tr>
+                    <td>2017</td>
+                    <td>$200,000</td>
+                </tr>
+                <tr>
+                    <td>2016</td>
+                    <td>$200,000</td>
+                </tr>
+                <tr>
+                    <td>2015</td>
+                    <td>$200,000</td>
+                </tr>
+            </table>
+        </div>
+
+        <!--col2:map-->
+        <div class="col-xs-12
+                    col-sm-4
+                    col-md-4
+                    col-lg-4">
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe class="embed-responsive-item" src="https://goo.gl/FKyCp1"></iframe>
+                </div>
+        </div>
+
+        <!--col3:contact-->
+        <div class="col-xs-12
+                    col-sm-4
+                    col-md-4
+                    col-lg-4">
+
+                <h3>Contact</h3>
+                <div class="list-group">
+                    <a class="list-group-item" href="tel:123456"><i class="fa fa-phone fa-fw" aria-hidden="true"></i>&nbsp; Call Us Now</a>
+                    <a class="list-group-item" href="mailto:sales@nissan.com.sg"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>&nbsp; Email Us</a>
+                    <a class="list-group-item" href="https://www.nissanusa.com/sportscars/gt-r"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Official Website</a>
+                </div>
+
+                <ul class="list-inline">
+                    <li><a href="https://www.facebook.com"><i class="fa fa-facebook fa-2x"></i></li>
+                    <li><a href="https://www.instagram.com"><i class="fa fa-instagram fa-2x"></i></li>
+                    <li><a href="https://www.linkedin.com"><i class="fa fa-linkedin fa-2x"></i></li>
+                </ul>
+        </div>
+    </div>
+
+    <!--row6:social media-->
+    <!--<div class="row">
+        
+        <ul class="list-inline text-center">
+            <li><a href="https://www.facebook.com"><i class="fa fa-facebook fa-2x"></i></li>
+            <li><a href="https://www.instagram.com"><i class="fa fa-instagram fa-2x"></i></li>
+            <li><a href="https://www.linkedin.com"><i class="fa fa-linkedin fa-2x"></i></li>
+        </ul>
+
+    </div>-->
+
+
+
+    </div>
+
+    
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jquery -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/wow/1.1.2/wow.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+.my-jumbotron-background{
+    height: 50vh;
+    background-image:url("http://allswalls.com/images/tail-lights-wallpaper-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
